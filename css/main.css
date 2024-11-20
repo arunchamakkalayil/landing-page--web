@@ -180,7 +180,7 @@ header nav button {
   align-items: center;
   justify-content: center;
   gap: 1px;
-  background-image: url("/Images/aboutus.png");
+  background-image: url("Images/aboutus.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -223,7 +223,7 @@ header nav button {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-image: url("/Images/Ab. Accurates AI Marque.png");
+  background-image: url("Images/Ab. Accurates AI Marque.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
@@ -292,7 +292,7 @@ header nav button {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  background-image: url("/Images/Frame\ 11.png");
+  background-image: url("Images/Frame\ 11.png");
   background-position: center;
   background-repeat: no-repeat;
   color: black;
