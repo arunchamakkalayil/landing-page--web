@@ -594,6 +594,13 @@ li {
   line-height: 4rem;
   font-size: 2.5rem;
 }
+.font-style7 {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
 .font-style3 {
   color: #33333398;
   font-size: 16px;
@@ -994,9 +1001,8 @@ a{
 }
 .image-solution{
   border-radius: 50%;
-background: linear-gradient(225deg, #cacaca, #f0f0f0);
-box-shadow:  -30px 30px 0px #848484,
-             30px -30px 0px #ffffff;
+
+           
 }
 .solutions-box{
   padding: 20px;
@@ -1007,7 +1013,7 @@ box-shadow:  -30px 30px 0px #848484,
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .solutions-box-container{
-  display: flex;
+  display: grid;
   gap: 20px;
 
 }
@@ -1019,7 +1025,7 @@ section .content-box{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
 }
 .content-box h4{
   font-family: "Space Grotesk", serif;
@@ -1047,4 +1053,270 @@ section.content-box {
 }
 .solutions-box img {
   margin-bottom: 10px; /* Optional: space below the image */
+}
+
+/* solution- 2nd sec */
+
+section.solution-sec-2 {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+section.solution-sec-2 img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+section.solution-sec-2 p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+
+/* section.solution-sec-2 .content {
+  font-family: "Inter", sans-serif;
+  padding: 2rem;
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+} */
+.solution-item-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.solutions-item h4{
+  font-family: "Space Grotesk", serif;
+}
+.solutions-item p {
+  color: #33333398;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.solutions-item{
+  padding: 10px;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.solution-sec-blue {
+  display: flex;
+  flex-direction:column;
+  background-color:#006590 ;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.solution-sec-blue .solution-item-container{
+  padding-bottom: 10px;
+}
+.solution-sec-blue img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.solution-sec-blue p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+.set-width{
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  color: white;
+}
+.set-width p{
+  color: rgba(255, 255, 255, 0.55);
+}
+.solutions-item img{
+width: 50px;
+padding-bottom: 10px;
+}
+section.solutions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.solutions img {
+  max-height: 600px;
+  object-fit: cover;
+}
+section.solutions p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  max-width: 600px;
+}
+.set-sec-width{
+  width: 42%;
+}
+.set-blue-width{
+  width: 50%;
+}
+#solutions-last-sec {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 5rem;
+  font-size: 3.5rem;
+}
+@media (max-width: 1100px) {
+  section.solutions .font-style5{
+    font-size: 2.5rem;
+  }
+  .solution-sec-2 .font-style5{
+    font-size: 2.5rem;
+  }
+  .solution-sec-blue .font-style5{
+    font-size: 2.5rem;
+  }
+  .content-box{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .solution-item-container, .solutions{
+padding-left: 20px;
+padding-right: 20px;
+  }
+}
+
+/* Responsive grid layout */
+@media (min-width: 1024px) {
+  .solutions-box-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row on desktop */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .solutions-box-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 boxes per row on tablets */
+  }
+}
+
+@media (max-width: 767px) {
+  .solutions-box-container {
+    grid-template-columns: 1fr; /* 1 box per row on mobile */
+  }
+  section.solutions {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .set-sec-width{
+    width: 100%;
+  }
+  .set-blue-width{
+    width: 100%;
+  }
+  .solution-sec-2 .solution-item-container{
+    flex-direction: column-reverse;
+  }
+  .solution-sec-blue .solution-item-container{
+    flex-direction: column;
+  }
+  .solutions-item{
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  section .content-box {
+    padding-bottom: 0px;
+  }
+  #solutions-last-sec{
+    font-size: 2rem!important;
+    line-height:2.3rem!important;
+  }
+}
+/* @media (max-width: 767px) {
+  .solutions-last-sec{
+    font-size: 1rem;
+    line-height: normal;
+  }
+} */
+/* ARAMCO */
+.section-header {
+  background: #004b80;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.sub-section {
+  background: #e6f2fa;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.content-table {
+  border-collapse: separate; /* Ensure border-radius can work */
+  border-spacing: 0; /* Remove gaps between cells */
+  width: 100%;
+  overflow: hidden; /* Ensures the border-radius is applied */
+}
+
+.content-table th, .content-table td {
+  border: 1px solid #004b80;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.content-table th {
+  background: #f0f8ff;
+  font-weight: bold;
+}
+.content-table tr:last-child td:first-child {
+  border-bottom-left-radius: 20px; /* Bottom-left corner */
+}
+
+.content-table tr:last-child td:last-child {
+  border-bottom-right-radius: 20px; /* Bottom-right corner */
+}
+.content-table td {
+  background: #fff;
+}
+
+
+@media (max-width: 768px) {
+
+  .section-header, .sub-section {
+      font-size: 14px;
+  }
+
+  .content-table th, .content-table td {
+      font-size: 12px;
+      padding: 8px;
+  }
+}
+
+.system-features {
+width: 100%;
+padding: 10px 20px;
+background-color: #004b80;
+border-radius: 20px;
+color: white;
+margin-bottom: 20px;
+font-family: "Space Grotesk", serif;
+font-size: 22px;
+font-weight: 600;
+
+}
+.table-font1 {
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+}
+.table-font2 {
+  font-family: "Inter", sans-serif;
+  font-size: 14;
 }
