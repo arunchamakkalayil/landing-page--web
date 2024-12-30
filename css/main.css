@@ -1000,9 +1000,26 @@ a{
   color: #006590;
 }
 .image-solution{
-  border-radius: 50%;
-
+  position: relative;
+  width: fit-content;
            
+}
+.image-solution img {
+  display: block;
+  border-radius: 50%;
+  box-shadow: -20px 35px 0px #d3d3d3; /* Negative values for opposite side */
+}
+
+.image-solution::after {
+  content: "";
+  position: absolute;
+  top: -10px; /* Matches shadow size */
+  left: -10px; /* Matches shadow size */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff; /* Matches the background color */
+  z-index: -1;
 }
 .solutions-box{
   padding: 20px;
