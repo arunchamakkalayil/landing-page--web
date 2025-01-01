@@ -1230,9 +1230,11 @@ padding-right: 20px;
   }
   .set-sec-width{
     width: 100%;
+    padding-top: 20px;
   }
   .set-blue-width{
     width: 100%;
+    padding-top: 20px;
   }
   .solution-sec-2 .solution-item-container{
     flex-direction: column-reverse;
