@@ -14,3 +14,20 @@ function tryProduct() {
 function watchDemo() {
     alert("Playing demo video...");
 }
+
+  const text = "Industrial Safety with AI";
+  const typingTextElement = document.getElementById("typing-text");
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      typingTextElement.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 100); // Adjust speed here
+    }
+  }
+
+  // Start the typing effect when the page loads
+  window.onload = () => {
+    typeEffect();
+  };
