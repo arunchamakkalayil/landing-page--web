@@ -31,3 +31,31 @@ function watchDemo() {
   window.onload = () => {
     typeEffect();
   };
+  
+  const frameCount = 60; // update this to match your actual number of frames
+  const frameRate = 50; // milliseconds per frame (~20fps)
+
+  const imageElement = document.getElementById("hero-animation");
+
+  let currentFrame = 0;
+
+  function pad(n) {
+    return n.toString().padStart(3, '0'); // 000, 001, ...
+  }
+
+  // Optional: preload frames
+  const frames = [];
+  for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+    img.src = `animation/LandingAnim${pad(i)}.webp`;
+    frames.push(img);
+  }
+
+  // Update the image every frameRate milliseconds
+  function updateFrame() {
+    imageElement.src = frames[currentFrame].src;
+    currentFrame = (currentFrame + 1) % frameCount; // loop
+  }
+
+  setInterval(updateFrame, frameRate);
+  
