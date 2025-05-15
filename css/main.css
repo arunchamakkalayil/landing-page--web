@@ -1333,3 +1333,20 @@ font-weight: 600;
   font-family: "Inter", sans-serif;
   font-size: 14;
 }
+#hero-video-desktop {
+  display: block;
+}
+
+#hero-video-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #hero-video-desktop {
+    display: none;
+  }
+
+  #hero-video-mobile {
+    display: block;
+  }
+}
