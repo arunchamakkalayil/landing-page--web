@@ -134,7 +134,7 @@ header nav button {
 
 .mobile-nav {
   display: none !important;
-  background-color: #006490;
+  background-color: #237d98;
   height: 100vh;
   position: absolute;
   top: -5px;
@@ -367,7 +367,7 @@ header nav button {
 /* Footer Styling */
 footer {
   margin-top: 1rem;
-  background-color: #006490;
+  background-color: #237d98;
   color: white;
   padding: 5rem;
   gap: 183px;
@@ -443,7 +443,6 @@ footer {
 .footer-logo {
   margin: auto;
   display: grid;
-  height: 100px;
   padding-top: 30px;
 }
 
@@ -458,8 +457,8 @@ footer {
 }
 
 .button-style1 {
-  background: #006590;
-  border: 2px solid #006590;
+  background: #237d98;
+  border: 2px solid #237d98;
   color: #fff;
 }
 
@@ -493,13 +492,13 @@ footer {
 
 .button-style2 {
   background: none;
-  border: 2px solid #006590;
-  color: #006590;
+  border: 2px solid #237d98;
+  color: #237d98;
 }
 
 .button-style3 {
-  background: #006590;
-  border: 2px solid #006590;
+  background: #237d98;
+  border: 2px solid #237d98;
   color: white;
   padding: 0 1.3rem;
   height: 50px;
@@ -896,7 +895,7 @@ section.regular .content {
   left: calc(0 - (100vw - 100%));
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(180deg, #006490 0%, rgb(240, 240, 240) 100%);
+  background: linear-gradient(180deg, #237d98 0%, rgb(240, 240, 240) 100%);
   width: 100vw;
   height: 70%;
   z-index: -1;
@@ -997,7 +996,7 @@ a{
   cursor: pointer;
 }
 .solutions-blue{
-  color: #006590;
+  color: #237d98;
 }
 .image-solution{
   position: relative;
@@ -1060,7 +1059,7 @@ section.content-box {
   justify-content: space-between;
 }
 .solutions-box:hover {
-  background-color: #006590;
+  background-color: #237d98;
   color: white;
   transition: all 0.3s ease;
 }
@@ -1127,7 +1126,7 @@ section.solution-sec-2 p {
 .solution-sec-blue {
   display: flex;
   flex-direction:column;
-  background-color:#006590 ;
+  background-color:#237d98 ;
   margin: auto;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -1256,7 +1255,7 @@ padding-right: 20px;
 }
 /* ARAMCO */
 .section-header {
-  background: #004b80;
+  background: #237d98;
   color: #fff;
   padding: 10px 20px;
   font-size: 18px;
@@ -1280,7 +1279,7 @@ padding-right: 20px;
 }
 
 .content-table th, .content-table td {
-  border: 1px solid #004b80;
+  border: 1px solid #237d98;
   padding: 10px 15px;
   text-align: left;
 }
@@ -1316,7 +1315,7 @@ padding-right: 20px;
 .system-features {
 width: 100%;
 padding: 10px 20px;
-background-color: #004b80;
+background-color: #237d98;
 border-radius: 20px;
 color: white;
 margin-bottom: 20px;
