@@ -1360,7 +1360,7 @@ section.solutions p {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
   display: flex;
@@ -1370,15 +1370,19 @@ section.solutions p {
 
 /* Styling modal content */
 .modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* This centers it */
   background-color: #fff;
-
   border-radius: 12px;
   max-width: 800px;
   width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-  margin: auto;
+  padding-bottom: 14px;
 }
+
+
 
 /* Hide element utility */
 .hidden {
