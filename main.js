@@ -37,25 +37,43 @@ function watchDemo() {
 
   const imageElement = document.getElementById("hero-animation");
 
-  let currentFrame = 0;
+  let currentVideoIndex = 0;
+let videos;
 
-  function pad(n) {
-    return n.toString().padStart(3, '0'); // 000, 001, ...
-  }
+function openModal() {
+  document.getElementById('videoModal').style.display = 'block';
+  videos = document.querySelectorAll('.demo-video');
+  currentVideoIndex = 0;
+  playVideo(currentVideoIndex);
+}
 
-  // Optional: preload frames
-  const frames = [];
-  for (let i = 0; i < frameCount; i++) {
-    const img = new Image();
-    img.src = `animation/LandingAnim${pad(i)}.webp`;
-    frames.push(img);
-  }
+function closeModal() {
+  document.getElementById('videoModal').style.display = 'none';
+  videos.forEach(video => {
+    video.pause();
+    video.currentTime = 0;
+  });
+}
 
-  // Update the image every frameRate milliseconds
-  function updateFrame() {
-    imageElement.src = frames[currentFrame].src;
-    currentFrame = (currentFrame + 1) % frameCount; // loop
-  }
+function playVideo(index) {
+  videos.forEach((video, i) => {
+    video.classList.add('hidden');
+    video.pause();
+    if (i === index) {
+      video.classList.remove('hidden');
+      video.play();
+    }
+  });
+}
 
-  setInterval(updateFrame, frameRate);
-  
+function nextVideo() {
+  if (!videos || videos.length === 0) return;
+  currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+  playVideo(currentVideoIndex);
+}
+
+function prevVideo() {
+  if (!videos || videos.length === 0) return;
+  currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+  playVideo(currentVideoIndex);
+}

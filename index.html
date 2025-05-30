@@ -61,7 +61,7 @@
               </button>
               <button
                 class="button-style2 watchDemo-margin"
-                onclick="watchDemo()"
+                onclick="openModal()"
               >
                 Watch Demo
               </button>
@@ -90,6 +90,27 @@
             <source src="./animation/mobile.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+<!-- Modal Popup -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="slider-container">
+      <video controls class="demo-video" id="video1">
+        <source src="/videos/video1.mp4" type="video/mp4" />
+      </video>
+      <video controls class="demo-video hidden" id="video2">
+        <source src="/videos/video2.mp4" type="video/mp4" />
+      </video>
+      <video controls class="demo-video hidden" id="video3">
+        <source src="/videos/video3.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="slider-controls">
+      <button onclick="prevVideo()">⟨</button>
+      <button onclick="nextVideo()">⟩</button>
+    </div>
+  </div>
+</div>
         </section>
 
         <section id="accurates-sec">
@@ -195,7 +216,7 @@
                 Know More
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
-              <button class="button-style2" onclick="watchDemo()">
+              <button class="button-style2" onclick="openModal()">
                 Watch Demo
               </button>
             </div>
@@ -209,6 +230,13 @@
       <div class="footer-sections">
         <div class="footer-sec-01">
           <img class="footer-logo" src="./Images/Logo_White (1).png" width="180px" />
+          <div class="contact-info">
+            3rd Floor Bldg No. 2869<br>
+            King Faisal St, At Tubayshi<br>
+            Ad Dammam, Saudi Arabia<br>
+            Phone: +966536326303<br>
+            Email: ai@accurates.sa
+          </div>
         </div>
         <div class="footer-sec-02">
           <ul class="footer-sec-list">
